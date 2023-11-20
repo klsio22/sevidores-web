@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-Br">
 
 <head>
   <meta charset="UTF-8">
@@ -26,6 +26,14 @@
     <p>Estamos felizes em atendê-lo! Entre em contato conosco para fazer seu pedido.</p>
     <p>Telefone: (xx) xxxxx-xxxx</p>
     <p>Email: sorveteria@saboroso.com</p>
+  </section>
+
+  <section class="link">
+    <p>
+      <a href="/mensagem.php">
+        Enviar mensagem via formulário, click aqui!!!
+      </a>
+    </p>
   </section>
 
   <?php include('footer.php'); ?>

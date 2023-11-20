@@ -4,11 +4,24 @@ body {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: #00b5ff;
+}
+
 header {
-  background-color: #87CEEB; /* Azul Claro */
+  background-color: #87ceeb; /* Azul Claro */
   color: #fff;
   text-align: center;
   padding: 20px;
+}
+
+.content {
+  margin: 2rem;
+}
+
+.link {
+  margin: 2rem;
 }
 
 .menu {
@@ -17,7 +30,7 @@ header {
 }
 
 .menu h2 {
-  color: #87CEEB; /* Azul Claro */
+  color: #87ceeb; /* Azul Claro */
 }
 
 .menu ul {
