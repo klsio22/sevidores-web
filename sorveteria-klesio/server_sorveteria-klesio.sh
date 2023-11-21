@@ -8,13 +8,14 @@ server {
   access_log /var/www/sorveteria-klesio.com.br/logs/nginx_access.log;
   error_log /var/www/sorveteria-klesio.com.br/logs/nginx_error.log;
 
-  # Maintenance mode
+  # authentication permissions
   location / {
+    auth_basic "Restricted Content";
+    auth_basic_user_file /etc/nginx/.htpasswd;
+
     if (-f /etc/nginx/maintenance/$server_name) {
       return 503;
     }
-
-    try_files $uri $uri/ =404;
   }
 
   # Handle PHP requests
